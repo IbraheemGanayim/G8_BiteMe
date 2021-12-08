@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.HRMScreenController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="742.0" prefWidth="1288.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TextField id="HelloHumanResoursesManager" prefHeight="64.0" prefWidth="560.0" text="Hello Human Resources Manager">
+               <font>
+                  <Font name="Bauhaus 93" size="35.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.27" color="#2c80ff" height="96.03" radius="33.4225" width="39.66" />
+               </effect>
+            </TextField>
+            <Button id="NewOrderButton" fx:id="NewOrder" layoutX="59.0" layoutY="323.0" mnemonicParsing="false" onAction="#StartOrder" prefHeight="57.0" prefWidth="186.0" text="New Order" textFill="#c24133">
+               <font>
+                  <Font name="Bauhaus 93" size="25.0" />
+               </font>
+            </Button>
+            <Button id="UserApprovalButton" fx:id="UserApprove" layoutX="339.0" layoutY="323.0" mnemonicParsing="false" onAction="#OpenUsersList" prefHeight="57.0" prefWidth="186.0" text="User Approval" textFill="#c24133">
+               <font>
+                  <Font name="Bauhaus 93" size="25.0" />
+               </font>
+            </Button>
+            <ImageView id="NewOrderImage" fitHeight="200.0" fitWidth="200.0" layoutX="57.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/order.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="339.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/approveaccount.png" />
+               </image>
+            </ImageView>
+            <ImageView id="LogOutImage" fitHeight="27.0" fitWidth="29.0" layoutX="1185.0" layoutY="645.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/logout.png" />
+               </image>
+            </ImageView>
+            <Button id="LogOutBurron" fx:id="logout" layoutX="1069.0" layoutY="634.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="48.0" prefWidth="92.0" text="Log-Out" textAlignment="CENTER">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#2c80ff" />
+               </effect>
+            </Button>
+            <ImageView id="BurgerIcon" fitHeight="150.0" fitWidth="200.0" layoutX="782.0" layoutY="537.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/Burger.png" />
+               </image>
+            </ImageView>
+            <ImageView id="PizzaIcon" fitHeight="150.0" fitWidth="200.0" layoutX="994.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/Pizza.png" />
+               </image>
+            </ImageView>
+            <ImageView id="SushiIcon" fitHeight="150.0" fitWidth="200.0" layoutX="1049.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/sushi.png" />
+               </image>
+            </ImageView>
+            <ImageView id="SaladIcon" fitHeight="150.0" fitWidth="200.0" layoutX="632.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/salad%20icon.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="14.0" layoutY="537.0" prefHeight="97.0" prefWidth="560.0" text="Life's too short for boring food">
+               <font>
+                  <Font name="Blackadder ITC" size="48.0" />
+               </font>
+            </TextField>
+            <ImageView id="PastaIcon" fitHeight="150.0" fitWidth="200.0" layoutX="644.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/PastaIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

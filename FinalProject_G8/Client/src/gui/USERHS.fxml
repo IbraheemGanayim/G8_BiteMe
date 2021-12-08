@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.USERHSController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="742.0" prefWidth="1288.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TextField id="hellobranchmanagername" prefHeight="92.0" prefWidth="636.0" text="Hello ">
+               <font>
+                  <Font name="Bauhaus 93" size="51.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.27" color="#2c80ff" height="96.03" radius="33.4225" width="39.66" />
+               </effect>
+            </TextField>
+            <ImageView id="userIcon" fitHeight="92.0" fitWidth="108.0" layoutX="544.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/user.png" />
+               </image>
+            </ImageView>
+            <ImageView id="UserConnectedIcon" fitHeight="150.0" fitWidth="200.0" layoutX="698.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/userconnected.jpg" />
+               </image>
+            </ImageView>
+            <TextField id="UserIsConnectedField" layoutX="615.0" layoutY="183.0" text="IsConnected">
+               <font>
+                  <Font name="Aharoni Bold" size="19.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#5e9fff" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </TextField>
+            <ImageView id="BiteMeLogo" fitHeight="253.0" fitWidth="297.0" layoutX="1018.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/bitemeimg/logo-biteme.jpg" />
+               </image>
+            </ImageView>
+            <Text id="Quotes1" fontSmoothingType="LCD" layoutX="519.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our family gets a little bigger every time you come by." textAlignment="CENTER" wrappingWidth="358.88671875">
+               <font>
+                  <Font name="Bodoni MT Condensed" size="34.0" />
+               </font>
+            </Text>
+            <ImageView id="SmileyFaceIcon" fitHeight="55.0" fitWidth="73.0" layoutX="869.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/smileyface.jpg" />
+               </image>
+            </ImageView>
+            <ImageView id="OrderIcon" fitHeight="200.0" fitWidth="200.0" layoutX="50.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/order.png" />
+               </image>
+            </ImageView>
+            <Button id="NewOrderButton" fx:id="NewOrder" layoutX="75.0" layoutY="363.0" mnemonicParsing="false" onAction="#StartOrder" prefHeight="45.0" prefWidth="141.0" text="New Order" textFill="#c24133">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Button>
+            <Button id="MyOrderButton" fx:id="Orders" layoutX="334.0" layoutY="363.0" mnemonicParsing="false" onAction="#ViewOrdersList" prefHeight="45.0" prefWidth="141.0" text="My Order" textFill="#c24133">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Button>
+            <ImageView id="MyOrderIcon" fitHeight="200.0" fitWidth="200.0" layoutX="331.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/MyOrder.png" />
+               </image>
+            </ImageView>
+            <Button id="LogOutBurron" fx:id="Logout" layoutX="1024.0" layoutY="654.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="48.0" prefWidth="92.0" text="Log-Out" textAlignment="CENTER">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#2c80ff" />
+               </effect>
+            </Button>
+            <ImageView id="LogOutImage" fitHeight="37.0" fitWidth="44.0" layoutX="1137.0" layoutY="660.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/logout.png" />
+               </image>
+            </ImageView>
+            <ImageView id="SaladIcon" fitHeight="140.0" fitWidth="173.0" layoutX="50.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/salad%20icon.png" />
+               </image>
+            </ImageView>
+            <ImageView id="PizzaIcon" fitHeight="104.0" fitWidth="143.0" layoutX="765.0" layoutY="598.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/Pizza.png" />
+               </image>
+            </ImageView>
+            <ImageView id="BurgerIcon" fitHeight="132.0" fitWidth="124.0" layoutX="466.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/Burger.png" />
+               </image>
+            </ImageView>
+            <ImageView id="PastaIcon" fitHeight="150.0" fitWidth="200.0" layoutX="644.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/PastaIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView id="HotDogImage" fitHeight="116.0" fitWidth="124.0" layoutX="966.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/Hotdog.jpg" />
+               </image>
+            </ImageView>
+            <ImageView id="donutimage1" fitHeight="124.0" fitWidth="131.0" layoutX="280.0" layoutY="484.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/donut2.png" />
+               </image>
+            </ImageView>
+            <ImageView id="donutimage2" fitHeight="132.0" fitWidth="177.0" layoutX="1101.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/donut1.png" />
+               </image>
+            </ImageView>
+            <Text id="text" fill="#ff0dae" fontSmoothingType="LCD" layoutX="893.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To live a full life, you have to fill your stomach first" textAlignment="CENTER" wrappingWidth="377.40625">
+               <font>
+                  <Font name="Berlin Sans FB" size="62.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow>
+                           <input>
+                              <Shadow />
+                           </input>
+                        </Shadow>
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#ff3d3d" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Text>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

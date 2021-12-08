@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="CEOIcon" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="742.0" prefWidth="1288.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CEOScreenController">
+   <children>
+      <TextField id="hellobranchmanagername" prefHeight="90.0" prefWidth="592.0" text="Hello ">
+         <font>
+            <Font name="Bauhaus 93" size="35.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.27" color="#2c80ff" height="96.03" radius="33.4225" width="39.66" />
+         </effect>
+      </TextField>
+      <TextField id="BiteMeCEO" layoutX="586.0" layoutY="97.0" prefHeight="28.0" prefWidth="101.0" text="BiteME CEO">
+         <font>
+            <Font name="Bauhaus 93" size="15.0" />
+         </font>
+      </TextField>
+      <ImageView id="RevenueReportsImage" fitHeight="150.0" fitWidth="150.0" layoutX="96.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bitemeimg/revenuereport.png" />
+         </image>
+      </ImageView>
+      <Button id="RecenueReportsButton" fx:id="ViewReport" layoutX="96.0" layoutY="352.0" mnemonicParsing="false" onAction="#ReportPage" prefHeight="45.0" prefWidth="141.0" text="View Reports" textFill="#c24133">
+         <font>
+            <Font name="Bauhaus 93" size="14.0" />
+         </font>
+      </Button>
+      <Button id="ProducedReportsButton" fx:id="ViewPR" layoutX="490.0" layoutY="352.0" mnemonicParsing="false" onAction="#OpenPR" prefHeight="45.0" prefWidth="141.0" text="Produced Reports" textFill="#c24133">
+         <font>
+            <Font name="Bauhaus 93" size="14.0" />
+         </font>
+      </Button>
+      <Button id="Askforreportbutton" fx:id="AskForReports" layoutX="306.0" layoutY="352.0" mnemonicParsing="false" onAction="#ReqReport" prefHeight="45.0" prefWidth="141.0" text="Ask for Report" textFill="#c24133">
+         <font>
+            <Font name="Bauhaus 93" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="302.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bitemeimg/askforreportr.png" />
+         </image>
+      </ImageView>
+      <ImageView id="ProducedReportImage" fitHeight="150.0" fitWidth="150.0" layoutX="490.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bitemeimg/preduce%20report.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="67.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true" />
+      <Button id="RegisterEmployerButton" fx:id="RegEmployer" layoutX="96.0" layoutY="597.0" mnemonicParsing="false" onAction="#OpenRegisterEPage" prefHeight="45.0" prefWidth="141.0" text="Register Employer" textFill="#c24133">
+         <font>
+            <Font name="Bauhaus 93" size="14.0" />
+         </font>
+      </Button>
+      <Button id="RegisterSupplierButton" fx:id="RegisterSupplier" layoutX="306.0" layoutY="597.0" mnemonicParsing="false" onAction="#OpenRegisterSPage" prefHeight="45.0" prefWidth="141.0" text="Register Supplier" textFill="#c24133">
+         <font>
+            <Font name="Bauhaus 93" size="14.0" />
+         </font>
+      </Button>
+      <Button id="ViewUsersButton" fx:id="ViewUsers" layoutX="495.0" layoutY="597.0" mnemonicParsing="false" onAction="#UsersList" prefHeight="45.0" prefWidth="141.0" text="View Users" textFill="#c24133">
+         <font>
+            <Font name="Bauhaus 93" size="14.0" />
+         </font>
+      </Button>
+      <Button id="ApproveAccountButton" fx:id="ApproveAcc" layoutX="712.0" layoutY="598.0" mnemonicParsing="false" onAction="#OpenAccountsList" prefHeight="45.0" prefWidth="141.0" text="Approve Account" textFill="#c24133">
+         <font>
+            <Font name="Bauhaus 93" size="14.0" />
+         </font>
+      </Button>
+      <Button id="ViewMenuButton" fx:id="ViewMenu" layoutX="701.0" layoutY="352.0" mnemonicParsing="false" onAction="#OpenMenu" prefHeight="45.0" prefWidth="141.0" text="View Menu" textFill="#c24133">
+         <font>
+            <Font name="Bauhaus 93" size="14.0" />
+         </font>
+      </Button>
+      <ImageView id="RegisterEmployer" fitHeight="150.0" fitWidth="150.0" layoutX="84.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bitemeimg/manager2.png" />
+         </image>
+      </ImageView>
+      <ImageView id="RegisterSupplierImage" fitHeight="150.0" fitWidth="150.0" layoutX="302.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bitemeimg/supplierIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView id="RegisterSupplierImage" fitHeight="150.0" fitWidth="150.0" layoutX="495.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bitemeimg/users%20info.png" />
+         </image>
+      </ImageView>
+      <ImageView id="ApproveAccountImage" fitHeight="150.0" fitWidth="150.0" layoutX="707.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bitemeimg/approveaccount.png" />
+         </image>
+      </ImageView>
+      <ImageView id="ViewMenuImage" fitHeight="150.0" fitWidth="150.0" layoutX="707.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bitemeimg/menu.png" />
+         </image>
+      </ImageView>
+      <Button id="LogOutBurron" fx:id="logout" layoutX="1037.0" layoutY="642.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="48.0" prefWidth="92.0" text="Log-Out" textAlignment="CENTER">
+         <font>
+            <Font name="Bauhaus 93" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#2c80ff" />
+         </effect>
+      </Button>
+      <ImageView id="LogOutImage" fitHeight="35.0" fitWidth="34.0" layoutX="1152.0" layoutY="649.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bitemeimg/logout.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="90.0" fitWidth="141.0" layoutX="590.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bitemeimg/CEOIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView id="BurgerIcon" fitHeight="150.0" fitWidth="200.0" layoutX="908.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bitemeimg/Burger.png" />
+         </image>
+      </ImageView>
+      <ImageView id="PizzaIcon" fitHeight="150.0" fitWidth="200.0" layoutX="927.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bitemeimg/Pizza.png" />
+         </image>
+      </ImageView>
+      <ImageView id="SushiIcon" fitHeight="150.0" fitWidth="200.0" layoutX="1094.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bitemeimg/sushi.png" />
+         </image>
+      </ImageView>
+      <ImageView id="BiteMeLogo" fitHeight="213.0" fitWidth="287.0" layoutX="1025.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bitemeimg/logo-biteme.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

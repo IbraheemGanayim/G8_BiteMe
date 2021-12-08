@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.BMScreenController">
+  <children>
+    <AnchorPane id="BMHomeScreen" maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="742.0" prefWidth="1288.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView id="BiteMeIconImage" fitHeight="300.0" fitWidth="300.0" layoutX="1015.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/logo-biteme.jpg" />
+               </image>
+            </ImageView>
+            <Button id="LogOutBurron" fx:id="logout" layoutX="1053.0" layoutY="652.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="48.0" prefWidth="92.0" text="Log-Out" textAlignment="CENTER">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#2c80ff" />
+               </effect>
+            </Button>
+            <ImageView id="LogOutImage" fitHeight="27.0" fitWidth="29.0" layoutX="1167.0" layoutY="663.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/logout.png" />
+               </image>
+            </ImageView>
+            <ImageView id="EditMenuImage" fitHeight="150.0" fitWidth="150.0" layoutX="478.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/menu.png" />
+               </image>
+            </ImageView>
+            <ImageView id="SendReportImage" fitHeight="150.0" fitWidth="150.0" layoutX="690.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/preduce%20report.png" />
+               </image>
+            </ImageView>
+            <ImageView id="ViewReportImage" fitHeight="150.0" fitWidth="150.0" layoutX="261.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/view%20report.png" />
+               </image>
+            </ImageView>
+            <ImageView id="RegisterAccountImage" fitHeight="150.0" fitWidth="150.0" layoutX="480.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/Rigester%20account.png" />
+               </image>
+            </ImageView>
+            <ImageView id="EditUserImage" fitHeight="167.0" fitWidth="165.0" layoutX="263.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/users%20info.png" />
+               </image>
+            </ImageView>
+            <ImageView id="NewOrderImage" fitHeight="150.0" fitWidth="150.0" layoutX="486.0" layoutY="526.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/order.png" />
+               </image>
+            </ImageView>
+            <TextField id="hellobranchmanagername" disable="true" layoutX="8.0" layoutY="7.0" prefHeight="90.0" prefWidth="592.0" text="Hello ">
+               <font>
+                  <Font name="Bauhaus 93" size="35.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.27" color="#2c80ff" height="96.03" radius="33.4225" width="39.66" />
+               </effect>
+            </TextField>
+            <TextField id="resturantnamemanager" layoutX="626.0" layoutY="38.0" text="Manager">
+               <font>
+                  <Font name="Bauhaus 93" size="15.0" />
+               </font>
+            </TextField>
+            <Button id="EditMenuButton" fx:id="EditMenu" layoutX="487.0" layoutY="250.0" mnemonicParsing="false" onAction="#OpenMenu" prefHeight="45.0" prefWidth="141.0" text="Edit Menu" textFill="#c24133">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Button>
+            <Button id="SendReportButton" fx:id="sendreport" layoutX="704.0" layoutY="250.0" mnemonicParsing="false" onAction="#SendReport" prefHeight="45.0" prefWidth="141.0" text="Send Report" textFill="#c24133">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Button>
+            <Button id="ViewReportButton" fx:id="ViewReports" layoutX="263.0" layoutY="250.0" mnemonicParsing="false" onAction="#ReportList" prefHeight="45.0" prefWidth="141.0" text="View Report" textFill="#c24133">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Button>
+            <Button id="RegisterAccountButton" fx:id="RegAcc" layoutX="485.0" layoutY="474.0" mnemonicParsing="false" onAction="#StartRegAcc" prefHeight="45.0" prefWidth="141.0" text="Register Account" textFill="#c24133">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Button>
+            <Button id="EditUserButton" fx:id="EditUser" layoutX="275.0" layoutY="481.0" mnemonicParsing="false" onAction="#EditUser" prefHeight="45.0" prefWidth="141.0" text="Edit User" textFill="#c24133">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Button>
+            <Button id="NewOrderButton" fx:id="neworder" layoutX="489.0" layoutY="683.0" mnemonicParsing="false" onAction="#StartNewOrder" prefHeight="45.0" prefWidth="141.0" text="New Order" textFill="#c24133">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Button>
+            <ImageView id="HelloManagerIcon" fitHeight="90.0" fitWidth="101.0" layoutX="510.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/manager-1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="78.0" fitWidth="57.0" layoutX="573.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView id="ConfirmEmployerImage" fitHeight="150.0" fitWidth="150.0" layoutX="700.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/manager2.png" />
+               </image>
+            </ImageView>
+            <Button id="ConfirmEmployerButton" fx:id="ConfirmEmp" layoutX="705.0" layoutY="481.0" mnemonicParsing="false" onAction="#EmpConfirmation" prefHeight="45.0" prefWidth="141.0" text="Confirm Employer" textFill="#c24133">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Button>
+            <Text fill="#2c80ff" layoutX="880.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="“If you don’t take care of the customer someone else will!”-" wrappingWidth="299.99998047947884">
+               <font>
+                  <Font name="Agency FB" size="69.0" />
+               </font>
+               <effect>
+                  <Glow level="0.87">
+                     <input>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </input>
+                  </Glow>
+               </effect>
+            </Text>
+            <ImageView id="resturantteamimage" fitHeight="111.0" fitWidth="134.0" layoutX="1113.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/resturant%20team.png" />
+               </image>
+               <effect>
+                  <Lighting specularConstant="0.89">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="SE_RESIZE" />
+               </cursor>
+            </ImageView>
+            <ImageView id="BurgerIcon" fitHeight="132.0" fitWidth="124.0" layoutX="37.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/Burger.png" />
+               </image>
+            </ImageView>
+            <ImageView id="PizzaIcon" fitHeight="104.0" fitWidth="143.0" layoutX="121.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/Pizza.png" />
+               </image>
+            </ImageView>
+            <ImageView id="SushiIcon" fitHeight="116.0" fitWidth="143.0" layoutX="14.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/sushi.png" />
+               </image>
+            </ImageView>
+            <ImageView id="SaladIcon" fitHeight="140.0" fitWidth="173.0" layoutX="103.0" layoutY="565.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bitemeimg/salad%20icon.png" />
+               </image>
+            </ImageView>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
